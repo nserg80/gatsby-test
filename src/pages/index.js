@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
       <Screen />
     </div>
 
-    <ul>
+    {/* <ul>
       {data.allStrapiArticle.edges.map(document => (
         <li key={document.node.id}>
           <h2>
@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => (
           <p>{document.node.content}</p>
         </li>
       ))}
-    </ul>
+    </ul> */}
 
     
     <Link to="/page-2/">Go to page 2</Link> <br />
@@ -35,16 +35,16 @@ const IndexPage = ({ data }) => (
 )
 
 export default IndexPage
-export const pageQuery = graphql`  
-  query IndexQuery {
-    allStrapiArticle {
-      edges {
-        node {
-          id
-          title
-          content
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`  
+//   query IndexQuery {
+//     allStrapiArticle {
+//       edges {
+//         node {
+//           id
+//           title
+//           content
+//         }
+//       }
+//     }
+//   }
+// `
