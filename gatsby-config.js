@@ -1,6 +1,6 @@
-require("dotenv").config({
-  path: `.env`,
-});
+// require("dotenv").config({
+//   path: `.env`,
+// });
 
 module.exports = {
   siteMetadata: {
@@ -17,16 +17,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.DEPLOY_URL
-          ? "https://YOUR-APP-URL.herokuapp.com"
-          : "http://localhost:1337",
-        contentTypes: [`article`, `user`],
-        queryLimit: 1000,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: process.env.DEPLOY_URL
+    //       ? "https://YOUR-APP-URL.herokuapp.com"
+    //       : "http://localhost:1337",
+    //     contentTypes: [`article`, `user`],
+    //     queryLimit: 1000,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
